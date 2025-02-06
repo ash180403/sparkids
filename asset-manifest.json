@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sparkids/static/css/main.6aad0e65.css",
-    "main.js": "/sparkids/static/js/main.0ca06713.js",
+    "main.js": "/sparkids/static/js/main.af89f148.js",
     "static/js/453.18b898a5.chunk.js": "/sparkids/static/js/453.18b898a5.chunk.js",
     "static/media/franchisehero.png": "/sparkids/static/media/franchisehero.62e19172435d7749c4cb.png",
     "static/media/educators.png": "/sparkids/static/media/educators.dfb47cc63dc4e3b9ad63.png",
@@ -76,11 +76,11 @@
     "static/media/ourstory1.png": "/sparkids/static/media/ourstory1.282f0b3bd8f9bd04d6d3.png",
     "index.html": "/sparkids/index.html",
     "main.6aad0e65.css.map": "/sparkids/static/css/main.6aad0e65.css.map",
-    "main.0ca06713.js.map": "/sparkids/static/js/main.0ca06713.js.map",
+    "main.af89f148.js.map": "/sparkids/static/js/main.af89f148.js.map",
     "453.18b898a5.chunk.js.map": "/sparkids/static/js/453.18b898a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6aad0e65.css",
-    "static/js/main.0ca06713.js"
+    "static/js/main.af89f148.js"
   ]
 }
