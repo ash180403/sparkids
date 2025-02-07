@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sparkids/static/css/main.6aad0e65.css",
-    "main.js": "/sparkids/static/js/main.5c83ce8c.js",
+    "main.css": "/sparkids/static/css/main.ee38d8c7.css",
+    "main.js": "/sparkids/static/js/main.80fe9974.js",
     "static/js/453.18b898a5.chunk.js": "/sparkids/static/js/453.18b898a5.chunk.js",
     "static/media/franchisehero.png": "/sparkids/static/media/franchisehero.62e19172435d7749c4cb.png",
     "static/media/educators.png": "/sparkids/static/media/educators.dfb47cc63dc4e3b9ad63.png",
@@ -19,7 +19,9 @@
     "static/media/courseimg1.png": "/sparkids/static/media/courseimg1.71359c5ff4ca57988358.png",
     "static/media/courseimg2.png": "/sparkids/static/media/courseimg2.0ca4a2bb65a061b6a027.png",
     "static/media/coursevedic.png": "/sparkids/static/media/coursevedic.942fa6cdc29613e7c732.png",
+    "static/media/courseimg5.png": "/sparkids/static/media/courseimg5.103d33ee38c0f6e96135.png",
     "static/media/coursehero.png": "/sparkids/static/media/coursehero.5475b4c916d1fded1122.png",
+    "static/media/courseimg4.png": "/sparkids/static/media/courseimg4.bf9f8c68a5f1003766df.png",
     "static/media/aboutushero.png": "/sparkids/static/media/aboutushero.0af0c655d8ce4056e818.png",
     "static/media/media2.png": "/sparkids/static/media/media2.8c0b2b899f861922a291.png",
     "static/media/franchisesuccess1.png": "/sparkids/static/media/franchisesuccess1.7e656c6ccbafda2a4347.png",
@@ -47,6 +49,7 @@
     "static/media/image3.png": "/sparkids/static/media/image3.90717075ff21caa6ef16.png",
     "static/media/image6.png": "/sparkids/static/media/image6.2f1f5df5ccbefcced4a0.png",
     "static/media/image8.png": "/sparkids/static/media/image8.164ab075e3a2db7c689f.png",
+    "static/media/logo.png": "/sparkids/static/media/logo.fd5d88a0d41efa10d871.png",
     "static/media/flame.png": "/sparkids/static/media/flame.5ba17c16da6802c271fd.png",
     "static/media/hover.png": "/sparkids/static/media/hover.38baa8728a92d2804b9c.png",
     "static/media/missionbg.png": "/sparkids/static/media/missionbg.6f801c26f9f9a0ab9c19.png",
@@ -66,21 +69,27 @@
     "static/media/quesmem6.png": "/sparkids/static/media/quesmem6.58d5b6458417bac70b8c.png",
     "static/media/quesmem3.png": "/sparkids/static/media/quesmem3.1ade99785ed6c60e478f.png",
     "static/media/watermark.png": "/sparkids/static/media/watermark.9cba50d162bed2d46543.png",
-    "static/media/logo.png": "/sparkids/static/media/logo.aa0c3ebb416c0b99795b.png",
+    "static/media/person3.png": "/sparkids/static/media/person3.1d13492e63315b94ef54.png",
+    "static/media/person4.png": "/sparkids/static/media/person4.221f8802f9348041bbea.png",
     "static/media/bgofimage.png": "/sparkids/static/media/bgofimage.42a280005433934a278e.png",
     "static/media/person.png": "/sparkids/static/media/person.51e3faea3f703d697b08.png",
     "static/media/opport2.jpg": "/sparkids/static/media/opport2.f959eca956a1f88bb0d9.jpg",
     "static/media/testimonial1.png": "/sparkids/static/media/testimonial1.e01084de8565b7497ed8.png",
+    "static/media/person1.png": "/sparkids/static/media/person1.9bfc6732211393bfc1bb.png",
+    "static/media/person2.png": "/sparkids/static/media/person2.9bfc6732211393bfc1bb.png",
+    "static/media/revicons.eot": "/sparkids/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/ourstory3.png": "/sparkids/static/media/ourstory3.582b03bc5fa5170af4b8.png",
     "static/media/ourstory4.png": "/sparkids/static/media/ourstory4.b1f1345f8cd4a850ddb5.png",
+    "static/media/revicons.ttf": "/sparkids/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/ourstory1.png": "/sparkids/static/media/ourstory1.282f0b3bd8f9bd04d6d3.png",
+    "static/media/revicons.woff": "/sparkids/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/sparkids/index.html",
-    "main.6aad0e65.css.map": "/sparkids/static/css/main.6aad0e65.css.map",
-    "main.5c83ce8c.js.map": "/sparkids/static/js/main.5c83ce8c.js.map",
+    "main.ee38d8c7.css.map": "/sparkids/static/css/main.ee38d8c7.css.map",
+    "main.80fe9974.js.map": "/sparkids/static/js/main.80fe9974.js.map",
     "453.18b898a5.chunk.js.map": "/sparkids/static/js/453.18b898a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6aad0e65.css",
-    "static/js/main.5c83ce8c.js"
+    "static/css/main.ee38d8c7.css",
+    "static/js/main.80fe9974.js"
   ]
 }
