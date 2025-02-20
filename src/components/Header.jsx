@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
-import ThemeToggle from "./ThemeToggle"; // Custom theme toggle component
+import ThemeToggle from "./ThemeToggle";
 import { ThemeContext } from "../context/ThemeContext";
 import "../styles/header.css";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -9,9 +9,12 @@ function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
 
-
   const toggleNav = () => setIsNavOpen(!isNavOpen);
   const closeNav = () => setIsNavOpen(false);
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+  const closeDropdown = () => setIsDropdownOpen(false);
   return (
     <header className="header">
       <div className="logo">
@@ -60,9 +63,9 @@ function Header() {
         <span></span>
       </div>
       <nav className={`nav ${isNavOpen ? "active" : ""}`}>
-      <button onClick={toggleTheme}>
-        {isDarkMode ? "🌞 Mode" : "˚☽˚.⋆ Mode"}
-      </button>
+        <button onClick={toggleTheme}>
+          {isDarkMode ? "🌞 Mode" : "˚☽˚.⋆ Mode"}
+        </button>
         <ul>
           <li>
             <NavLink
@@ -82,55 +85,71 @@ function Header() {
               AboutUs
             </NavLink>
           </li>
-          <li className="dropdown">
-            
-            <Dropdown>
-              <Dropdown.Toggle className="dropdown-toggle" id="dropdown-basic">
-                <span className="dropdown-label">
-                  Courses
-                  <svg
-                    className="dropdown-arrow"
-                    width="12"
-                    height="13"
-                    viewBox="0 0 12 13"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2 10.5L8 6.5L2 2.5"
-                      stroke="var(--primary-orange)"
-                      strokeWidth="3.37"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item as={NavLink} to="/abacus" onClick={closeNav}>
-                  Abacus
-                </Dropdown.Item>
-                <Dropdown.Item as={NavLink} to="/vedic" onClick={closeNav}>
-                  Vedic Maths
-                </Dropdown.Item>
-                <Dropdown.Item as={NavLink} to="/rubic" onClick={closeNav}>
-                  Rubik
-                </Dropdown.Item>
-                <Dropdown.Item
-                  as={NavLink}
-                  to="/handwriting"
-                  onClick={closeNav}
+          <li
+            className={`dropdown ${isDropdownOpen ? "open" : ""}`}
+            onMouseEnter={toggleDropdown}
+            onMouseLeave={closeDropdown}
+          >
+            <button className="dropdown-button" style={{ display: "flex" }}>
+              Courses
+              <span className={`header-arrow ${isDropdownOpen ? "open" : ""}`}>
+                <svg
+                  width="12"
+                  height="13"
+                  viewBox="0 0 12 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  Handwriting
-                </Dropdown.Item>
-                <Dropdown.Item as={NavLink} to="/reading" onClick={closeNav}>
-                  Reading
-                </Dropdown.Item>
-                <Dropdown.Item as={NavLink} to="/courses" onClick={closeNav}>
-                  All Courses
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+                  <path
+                    d="M2 10.5L8 6.5L2 2.5"
+                    stroke="#F58634"
+                    stroke-width="3.37"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+            </button>
+            {isDropdownOpen && (
+              <ul
+                className="header-dropdown-menu"
+                style={{
+                  margin: "0",
+                  gap: "10px",
+                  alignItems: "left",
+                }}
+              >
+                <li>
+                  <NavLink to="/abacus" onClick={closeNav}>
+                    Abacus
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/vedic" onClick={closeNav}>
+                    Vedic Maths
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/rubic" onClick={closeNav}>
+                    Rubik
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/handwriting" onClick={closeNav}>
+                    Handwriting
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/reading" onClick={closeNav}>
+                    Reading
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/courses" onClick={closeNav}>
+                    All Courses
+                  </NavLink>
+                </li>
+              </ul>
+            )}
           </li>
           <li>
             <NavLink
