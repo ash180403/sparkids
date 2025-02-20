@@ -17,7 +17,7 @@ import ReadingPage from "./pages/ReadingPage";
 import Scrolltotop from './components/Scrolltotop';
 import CustomCursor from "./components/CustomCursor";
 import ThemeToggle from "./components/ThemeToggle";
-import Splash from './components/SplashCursor';
+// import Splash from './components/SplashCursor';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
       <Header />
       <CustomCursor />
       <Scrolltotop />
-      <Splash />
+      {/* <Splash /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -39,6 +39,8 @@ function App() {
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/insight" element={<Insight />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/ThemeToggle" element={<ThemeToggle/>} />
+
       </Routes>
       <Footer />
     </Router>
